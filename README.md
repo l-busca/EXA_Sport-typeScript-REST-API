@@ -31,7 +31,8 @@ $ tsc api.ts --strict
 $ node api.js
 ```
 
-You can't add data with post request in the actual version but new features are coming
+You can't add data with post request in the actual version but new features are coming, and a sample data 
+is available on the repository, you just have to import it in your MongoDB database.
 
 
 # Example:
