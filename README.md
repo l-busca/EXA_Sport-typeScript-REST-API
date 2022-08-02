@@ -17,6 +17,6 @@ your_domain/sport/20
 
 You will get 20 exercices sort by muscles group (these data will be interpreted in a new project very soon)
 
-your_domain/sport/20
+your_domain/sport
 
 Get all the exercices actually available in the database
