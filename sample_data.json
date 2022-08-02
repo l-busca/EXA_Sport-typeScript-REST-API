@@ -1,0 +1,84 @@
+[
+    {
+        "id": 1,
+		"groupe":["jambes"],
+		"nom":"squat sauté":,
+		"materiel":"aucun",
+		"mode":"aucun",
+		"description":"Faire des squats avec un saut à chaque extension",
+		"url":"https://www.gofitnessplan.fr/images/exercises/female/jump-squat-in-out.jpg"
+    },
+    {
+        "id": 2,
+        "groupe":["jambes","bras"],
+		"nom":"sprawl":,
+		"materiel":"aucun",
+		"mode":"bip-aleatoire-2",
+		"description":"Se jeter en arrière puis coller ses hanches au sol",
+		"url":"https://evolve-mma.com/wp-content/uploads/2021/11/mma-sprawl.jpeg"
+    },{
+        "id": 3,
+        "groupe":["epaules","bras"],
+		"nom":"coup de poings avant":,
+		"materiel":"aucun",
+		"mode":"bip-15",
+		"description":"Donner des coups de poings en avant et accélerer/décélérer à chaque bip",
+		"url":"https://media.istockphoto.com/photos/boxer-throwing-jab-picture-id483095693?k=20&m=483095693&s=612x612&w=0&h=_1fXRm2kfkx8wD4cebMv0Pb0s1O7lU6MnJSBqizEhi8="
+    },{
+        "id": 4,
+        "groupe":["jambes","bras"],
+		"nom":"corde à sauter":,
+		"materiel":"corde",
+		"mode":"bip-15",
+		"description":"Sauter à la corde et accélerer/décélérer à chaque bip",
+		"url":"https://i0.wp.com/www.silencebrise.com/wp-content/uploads/2019/08/4-exercices-de-corde-%C3%A0-sauter-pour-maigrir-Sport-fitness-cardio-musculation-blogTogo.jpg"
+    },{
+        "id": 5,
+        "groupe":["epaules","bras"],
+		"nom":"jeter de balle":,
+		"materiel":"medecine ball",
+		"mode":"aucun",
+		"description":"Jeter la balle à pleine puissance au sol puis lancer la balle à pleine puissance en l'air, alterner",
+		"url":"https://acewebcontent.azureedge.net/blogs/blog-fitnovatives-020915-8.jpg"
+    },{
+        "id": 6,
+        "groupe":["jambes","epaules"],
+		"nom":"Coups de genou":,
+		"materiel":"aucun",
+		"mode":"aucun",
+		"description":"Envoyer des coups de genou dans le vide, avec les mains collées à une surface (en face) au dessus de la tete, les mains ne doivent pas descendre ",
+		"url":"https://us.123rf.com/450wm/xalanx/xalanx2103/xalanx210300420/166252675-mma-fighter-throwing-a-knee-strike-studio-shot-isolated-on-gray-background.jpg?ver=6"
+    },{
+        "id": 7,
+        "groupe":["bras"],
+		"nom":"uppercut":,
+		"materiel":"aucun",
+		"mode":"bip-15",
+		"description":"Envoyer des uppercuts dans le vide en face et accélerer/décélérer à chaque bip",
+		"url":"https://as1.ftcdn.net/v2/jpg/02/47/74/94/1000_F_247749469_xQsBECSjFSZybRhdCkaHNObEVy6paDzN.jpg"
+    },{
+        "id": 8,
+        "groupe":["bras"],
+		"nom":"coups de poings surface":,
+		"materiel":"gants boxe",
+		"mode":"bip-aleatoire-10",
+		"description":"Envoyer des directs à moyenne/forte puissance sur une surface et sprawl à chaque bip",
+		"url":"https://i.ytimg.com/vi/b6m9tWMfSdQ/maxresdefault.jpg"
+    },{
+        "id": 9,
+        "groupe":["jambes","abdos"],
+		"nom":"mountain climb":,
+		"materiel":"aucun",
+		"mode":"aucun",
+		"description":"Position pompe et monter les genous à allure de course",
+		"url":"https://static.vecteezy.com/system/resources/previews/006/417/750/original/woman-doing-cross-body-mountain-climbers-exercise-flat-illustration-isolated-on-white-background-free-vector.jpg"
+    },{
+        "id": 10,
+        "groupe":["jambes","bras"],
+		"nom":"sortie under sprawl":,
+		"materiel":"aucun",
+		"mode":"aucun",
+		"description":"Sortie de position inférieur sprawl en latéral dynamique",
+		"url":"https://jiujitsutimes.com/wp-content/uploads/Sit1.jpg"
+    }
+]
