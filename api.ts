@@ -41,9 +41,13 @@ function newAdjustExercices(nb:number,exercices:Exercice[]):Exercice[] {
 	const newExercices:Exercice[] = exercices;
 	const iteration:number = nb-exercices.length;
 	const size:number = exercices.length;
-	for (let i:number = 0; i < iteration; i++) {
-		const exercice = exercices[randomInt(size-1)];
-		newExercices.push(exercice);
+	if (nb > size) {
+		for (let i:number = 0; i < iteration; i++) {
+			const exercice = exercices[randomInt(size-1)];
+			newExercices.push(exercice);
+		}
+	} else if(nb > 0) {
+		newExercices.splice(0,size-nb);
 	}
 	return newExercices;
 }
