@@ -39,13 +39,10 @@ app.get('/sport/:nbExercice', async (req,res) => {
 
 function newAdjustExercices(nb:number,exercices:Exercice[]):Exercice[] {
 	const newExercices:Exercice[] = exercices;
-	console.log("taille bdd : "+exercices.length + " nb : "+nb+" soustraction : "+(nb-exercices.length));
 	const iteration:number = nb-exercices.length;
 	const size:number = exercices.length;
 	for (let i:number = 0; i < iteration; i++) {
 		const exercice = exercices[randomInt(size-1)];
-		console.log("ici"+exercice.groupe);
-		console.log(" i :"+i+" exercice : "+exercice.groupe);
 		newExercices.push(exercice);
 	}
 	return newExercices;
