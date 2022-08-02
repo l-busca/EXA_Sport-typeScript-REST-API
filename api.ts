@@ -18,7 +18,7 @@ type Exercice = {
 
 app.use(express.json())
 
-app.get('/sport', async (req,res) => {
+app.get('/exa', async (req,res) => {
 	await client.connect();
 	const db = client.db(dbName);
 	const collection = db.collection('exercice');
@@ -26,7 +26,7 @@ app.get('/sport', async (req,res) => {
     res.status(200).json(findResult);
 })
 
-app.get('/sport/:nbExercice', async (req,res) => {
+app.get('/exa/:nbExercice', async (req,res) => {
 	await client.connect();
 	const db = client.db(dbName);
 	const collection = db.collection('exercice');
