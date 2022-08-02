@@ -31,6 +31,7 @@ app.get('/exa/:nbExercice', async (req,res) => {
 	const db = client.db(dbName);
 	const collection = db.collection('exercice');
 	const findResult = await collection.find({}).project({ _id: 0 }).toArray();
+	shuffle(findResult);
 	const resultConverted:Exercice[] = documentToExercice(findResult);
 	let exercices:Exercice[] = newAdjustExercices(parseInt(req.params.nbExercice),resultConverted);
 	sortExercices(exercices);
@@ -92,6 +93,21 @@ function compareExercices(initial:Exercice,second:Exercice):boolean {
 	}
 	return false;
 }
+
+function shuffle(array:any[]) {
+	let currentIndex:number = array.length,  randomIndex:number;
+  
+	while (currentIndex != 0) {
+  
+	  randomIndex = Math.floor(Math.random() * currentIndex);
+	  currentIndex--;
+  
+	  [array[currentIndex], array[randomIndex]] = [
+		array[randomIndex], array[currentIndex]];
+	}
+  
+	return array;
+  }
 
 function arrayMove(arr:Exercice[], fromIndex:number, toIndex:number) {
     var element = arr[fromIndex];
