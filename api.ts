@@ -38,6 +38,18 @@ app.get('/exa/:nbExercice', async (req,res) => {
     res.status(200).json(exercices);
 })
 
+app.get('/exa/:categorie/:nbExercice', async (req,res) => {
+	await client.connect();
+	const db = client.db(dbName);
+	const collection = db.collection('exercice');
+	const findResult = await collection.find({categorie:req.params.categorie}).project({ _id: 0 }).toArray();
+	shuffle(findResult);
+	const resultConverted:Exercice[] = documentToExercice(findResult);
+	let exercices:Exercice[] = newAdjustExercices(parseInt(req.params.nbExercice),resultConverted);
+	sortExercices(exercices);
+    res.status(200).json(exercices);
+})
+
 function newAdjustExercices(nb:number,exercices:Exercice[]):Exercice[] {
 	const newExercices:Exercice[] = exercices;
 	const iteration:number = nb-exercices.length;
