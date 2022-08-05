@@ -14,6 +14,7 @@ type Exercice = {
 	mode: string;
 	description: string;
 	url: string;
+	categorie: string;
 }
 
 app.use(express.json())
@@ -75,7 +76,8 @@ function documentToExercice(document:any[]):Exercice[] {
 			materiel: document[i].materiel,
 			mode: document[i].mode,
 			description: document[i].description,
-			url: document[i].url
+			url: document[i].url,
+			categorie: document[i].categorie
 		}
 		exercices.push(exercice);
 	}
