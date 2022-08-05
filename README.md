@@ -1,5 +1,5 @@
 # EXA Sport API
-### Generate your custom sport program
+### Generate your custom sport program (only in french actually)
 ![1.1](https://mais.wtf/img/exa.png)
 
 This is an API write in typeScript using node.js, express.js and working with
